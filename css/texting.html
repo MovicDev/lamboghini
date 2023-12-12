@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 120px;
+        height: 100px;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    .container .card{
+min-width:100px;
+display: flex;
+align-items: center;
+justify-content: center;
+scroll-snap-align: center;
+}
+.container .card:nth-child(1){
+    background-color:lightblue ;
+}
+.container .card:nth-child(2){
+    background-color:lightgray;
+}
+.container .card:nth-child(3){
+    background-color:lightgreen;
+}
+.container .card:nth-child(4){
+    background-color:lightcoral ;
+}
+</style>
+<body>
+    <div class="container">
+<div class="card">1</div>
+<div class="card">2</div>
+<div class="card">3</div>
+<div class="card">4</div>
+
+    </div>
+</body>
+</html>
